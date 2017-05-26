@@ -8,6 +8,7 @@ class App extends Component {
   render() {
     let genders = ['Male', 'Female', 'Other'];
     let residentStatus = ['Resident', 'NRI', 'PIO'];
+    let browsers = ['Internet Explorer', 'Google Chrome', 'Mozilla Firefox', 'Safari'];
     return (
       <div>
         <InputTextBox title="Input text:" type="text" />
@@ -16,6 +17,8 @@ class App extends Component {
         <InputRadioButtonGroup name="gender" values={genders} />
         <br />
         <InputRadioButtonGroup name="Resident status" values={residentStatus} />
+        <br />
+        <InputSelectBox title="Browser" values={browsers} />
       </div>
     );
   }
