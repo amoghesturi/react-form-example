@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
+import InputTextBox from './InputTextBox.js'
+import InputCheckBox from './InputCheckBox.js'
 
 class App extends Component {
   render() {
     return (
-      <h1>Hello React :)</h1>
+      <div>
+        <InputTextBox title="Input text:" type="text" />
+        <InputCheckBox title="Input checkbox" name="checkbox" />
+      </div>
     );
   }
 }
